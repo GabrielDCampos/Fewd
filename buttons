@@ -1,0 +1,28 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>buttons</title>
+    <style>
+    .button{
+      color:rgb(14, 185, 207);
+      padding:12px;
+    }
+    .button-denger{
+      color:rgb(105, 7, 41);
+
+    }
+    </style>
+  </head>
+  <body>
+  <a class="button" href="#">Click me</a>
+
+  <button class"button" type="button" name="button">Click me</button>
+
+  <input class"button" type="submit" value="Click me">
+
+  <br><br><br>
+
+  <a href="#">Danger, don't click here</a>
+
+  </body>
+</html>
