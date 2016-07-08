@@ -67,10 +67,10 @@ main{
 }
 
 .forms input{
-color:red;
+  box-shadow: 0 0 1em rgb(224, 40, 40)); 
+
 
 }
-
 .forms label{
   cursor: pointer;
   display: inline-block;

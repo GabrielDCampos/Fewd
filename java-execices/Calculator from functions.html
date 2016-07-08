@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<input  type="text" id="input1" value="">
+<input  type="text" id="input2" value="">
+<button type="button">add</button>
+<p>
+
+</p>
+</html>
+
+<script type="text/javascript">
+  var a=document.querySelector("#input1");
+  var b=document.querySelector("#input2");
+  var but=document.querySelector("button");
+  var p=document.querySelector("p");
+  function add(){
+    var n=parseInt(a.value);
+    var m=parseInt(b.value);
+    p.textContent=n+m;
+  }
+  but.addEventListener("click", add);
+</script>
