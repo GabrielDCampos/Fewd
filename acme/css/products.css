@@ -3,7 +3,6 @@ body{
   font-size:18px;
   background-image:url(http://f.cl.ly/items/3C0W1n1t1s0P1Z0w131r/background.png);
 }
-
 header{
   background:rgb(199,199,199);
   width:100%;
@@ -11,8 +10,34 @@ header{
   right:0;
   position:fixed;
   border-bottom: 1px solid rgb(154,154,154);
-  padding:12px;
+  padding:8px;
+
 }
+li.nav{
+ list-style: none;
+ color:rgb(255, 255, 255);
+ float:right;
+}
+
+a.nav{
+  color:rgb(245, 249, 250);
+  style:none;
+  font-size:18px;
+  text-decoration:none;
+}
+.button.nav{
+  background-color:rgb(17, 61, 173);
+  border:none;
+  border-radius:5px;
+  padding: 15px;
+  color:rgb(255, 255, 255);
+  margin-right: 20px;
+  margin-bottom: 14px;
+  font-size: 15px;
+  text-decoration:none;
+  float:right;
+}
+
 
 main{
   padding:2em;
