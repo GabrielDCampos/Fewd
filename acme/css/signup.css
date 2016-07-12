@@ -1,0 +1,33 @@
+@import "base.css";
+
+.button1{
+  margin-right: 20px;
+}
+
+.button2{
+  margin-right: 20px;
+}
+
+.forms input{
+  box-shadow: 0 0 1em rgb(224, 40, 40));
+
+
+}
+.forms label{
+  cursor: pointer;
+  display: inline-block;
+  height: 45px;
+  width: 7em;
+
+}
+
+.checkbox label{
+  width: 300px;
+  height: 45px;
+
+}
+
+.buttonSubmit{
+  background-color:rgb(245, 246, 250);
+  border-radius:5px;
+}

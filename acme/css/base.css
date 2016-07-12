@@ -1,37 +1,36 @@
 body{
   font-family:"lucida sans unicode","lucida gande",sans-serif ;
-  font-size:18px;
+  font-size:15px;
   background-image:url(http://f.cl.ly/items/3C0W1n1t1s0P1Z0w131r/background.png);
+  margin:0;
 }
-
 header{
   background:rgb(199,199,199);
-  width:100%;
   top:0;
+  left:0;
   right:0;
   position:fixed;
   border-bottom: 1px solid rgb(154,154,154);
-  padding:12px;
-
+  overflow:auto;
+  padding:12px 24px;
 }
-
 img{
-  float:left;
-}
-
-li{
- list-style: none;
- color:rgb(255, 255, 255);
- float:right;
 
 }
+header nav{
+  float: right;
+}
+header ul{
+  list-style: none;
+  color: rgb(255, 255, 255);
+  margin:0;
+  margin-top: 10px;
+  padding:0;
+}
 
-a{
-  color:rgb(245, 249, 250);
-  style:none;
-  font-size:18px;
-  text-decoration:none;
-
+header li{
+  margin-left:20px;
+  display: inline;
 }
 
 .button{
@@ -40,21 +39,13 @@ a{
   border-radius:5px;
   padding: 15px;
   color:rgb(255, 255, 255);
-  margin-right: 20px;
-  margin-bottom: 14px;
   font-size: 15px;
   text-decoration:none;
-  float:right;
 }
-
-.button1{
-  margin-right: 20px;
+header a{
+  color:rgb(245, 249, 250);
+  text-decoration:none;
 }
-
-.button2{
-  margin-right: 20px;
-}
-
 main{
   padding:2em;
   background:rgb(249, 253, 255);
@@ -63,33 +54,7 @@ main{
   text-align:left;
   margin:13%;
   box-shadow: 0 0 1em rgb(120, 122, 120);
-  overflow:auto;
 }
-
-.forms input{
-  box-shadow: 0 0 1em rgb(224, 40, 40));
-
-
-}
-.forms label{
-  cursor: pointer;
-  display: inline-block;
-  height: 45px;
-  width: 7em;
-
-}
-
-.checkbox label{
-  width: 300px;
-  height: 45px;
-
-}
-
-.buttonSubmit{
-  background-color:rgb(245, 246, 250);
-  border-radius:5px;
-}
-
 footer{
   text-align:center;
   margin:0 auto;

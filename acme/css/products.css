@@ -1,75 +1,6 @@
-body{
-  font-family:"lucida sans unicode","lucida gande",sans-serif ;
-  font-size:18px;
-  background-image:url(http://f.cl.ly/items/3C0W1n1t1s0P1Z0w131r/background.png);
-}
-header{
-  background:rgb(199,199,199);
-  width:100%;
-  top:0;
-  right:0;
-  position:fixed;
-  border-bottom: 1px solid rgb(154,154,154);
-  padding:8px;
+@import "base.css";
 
-}
-li.nav{
- list-style: none;
- color:rgb(255, 255, 255);
- float:right;
-}
-
-a.nav{
-  color:rgb(245, 249, 250);
-  style:none;
-  font-size:18px;
-  text-decoration:none;
-}
-.button.nav{
-  background-color:rgb(17, 61, 173);
-  border:none;
-  border-radius:5px;
-  padding: 15px;
-  color:rgb(255, 255, 255);
-  margin-right: 20px;
-  margin-bottom: 14px;
-  font-size: 15px;
-  text-decoration:none;
-  float:right;
-}
-
-
-main{
-  padding:2em;
-  background:rgb(249, 253, 255);
-  border:1px hidden rgb(97, 97, 97);
-  border-radius:14px;
-  text-align:left;
-  margin:13%;
-  box-shadow: 0 0 1em rgb(120, 122, 120);
-
-}
-
-footer{
-  text-align:center;
-  margin:0 auto;
-  border-top:1px solid rgb(119, 120, 117);
-  width:80%;
-  color:rgb(129, 129, 129);
-}
-.button{
-  background-color:rgb(17, 61, 173);
-  border:none;
-  border-radius:5px;
-  padding: 7px;
-  color:rgb(255, 255, 255);
-  margin-right: 20px;
-  margin-bottom: 14px;
-  font-size: 15px;
-  text-decoration:none;
-
-}
-button {
+main button {
   background-color:rgb(255, 255, 255);
   border:1px solid rgb(18, 50, 163) ;
   border-radius:5px;
@@ -81,17 +12,15 @@ button {
   text-decoration:none;
   color:rgb(18, 50, 163);
 }
-ul{
 
-}
-img{
+main img{
   float:left;
   margin-top:18px;
   margin-left:-15px;
   margin-right:20px;
 
 }
-li{
+main li{
  overflow:auto;
  margin-bottom:20px;
  margin-left:15px;
