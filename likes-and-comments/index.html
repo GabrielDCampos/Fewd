@@ -1,5 +1,31 @@
 <!DOCTYPE html>
+ <script type="text/javascript">
+ var link = document.querySelector(".like-link").addEventListener("click", like);
+ var form = document.querySelector("#new-comment");
+ var incN = document.querySelector(".like-count");
 
+//
+ function like (event) {
+   event.preventDefault();
+
+
+ };
+ //
+ //link.addEventListener("click", like);
+//
+ function comment (event) {
+   event.preventDefault();
+   var newelement= document.createElement("div");
+
+   newelement.setAttribute("class","comments");
+   newelement.textContent=comentBody.value;
+   newelement.appendChild(comments)
+
+ };
+ //
+ form.addEventListener("submit", comment);
+ //
+ </script>
 <html>
   <head>
     <title>Blog</title>
@@ -48,6 +74,6 @@
       </form>
     </main>
 
-    <script src="script.js"></script>
+    <!-- <script src="script.js"></script> -->
   </body>
 </html>

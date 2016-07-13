@@ -9,14 +9,13 @@
 <script type="text/javascript">
   var say=document.querySelector("input");
   var but=document.querySelector("button");
-  var li=document.createElement("div");
   var ul=document.querySelector("p");
   var bb=document.querySelector("body")
-  ul.appendChild(li);
   but.addEventListener("click", sayHey);
 function sayHey(){
-  var ul=document.querySelector("p");
-  ul.appendChild(li);
+  var div=document.createElement("div");
+  div.textContent=say.value
+  bb.appendChild(div)
 }
 </script>
 </body>

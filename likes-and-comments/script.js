@@ -13,6 +13,7 @@ function like(event) {
 function comment(event) {
   event.preventDefault();
   var newelement= document.createElement("div");
+
   newelement.setAttribute("class","comments");
   newelement.textContent=comentBody.value;
   newelement.appendChild(comments)
