@@ -1,0 +1,17 @@
+
+
+//When the page loads
+  //get the form
+  // add a eventlistener
+//When form submited
+  //get the value of imput(gabriel)
+  //ass input valid to base to make full url
+  //get http data from web via (api)
+  //json.parse the http data to an sting
+//when the response comes back;
+  //parse the response (json)+(jason.parse(string) )
+  //set text content of td#user-name to user.name
+  //set textContent of td#uder-bio to user bio
+  //creat <img>
+  //set src to user.gabriel_url
+  //appemd img to td#user-picture  
