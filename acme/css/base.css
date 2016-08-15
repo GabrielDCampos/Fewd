@@ -6,17 +6,11 @@ body{
 }
 header{
   background:rgb(199,199,199);
-  top:0;
-  left:0;
-  right:0;
-  position:fixed;
   border-bottom: 1px solid rgb(154,154,154);
   overflow:auto;
   padding:12px 24px;
 }
-img{
 
-}
 header nav{
   float: right;
 }
@@ -61,4 +55,21 @@ footer{
   border-top:1px solid rgb(119, 120, 117);
   width:80%;
   color:rgb(129, 129, 129);
+}
+
+@media(max-width: 500px ){
+  header{
+    padding-top: 25px ;
+    padding-bottom: 25px ;
+ }
+  img{
+    margin: 0 auto;
+    display:block;
+
+ }
+  header  nav{
+    text-align:center;
+    float: none;
+    margin-top:20px;
+  }
 }

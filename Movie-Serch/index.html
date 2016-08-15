@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Movie Search</title>
+    <link rel="stylesheet" href="css/movies.css" media="screen" title="no title" charset="utf-8">
+  </head>
+  <body>
+    <main>
+      <form id="movie-search" action="index.html" method="post">
+        <input id="movies-text-box" type="text" name="What movie" placeholder="Movie Name" value="">
+        <button class="movieButton" type="submit">Search</button>
+      </form>
+      <ul id="movies-list">
+
+      </ul>
+
+    </main>
+    <script type="text/javascript">
+
+    var form = document.querySelector("form");
+    var ul = document.querySelector("#movies-list");
+    var imput = document.querySelector("#movies-text-box");
+
+    form.addEventListener("submit", search)
+
+    function search(event){
+      event.preventDefault()
+      var url = ("http://omdbapi.com/?s=" + imput.value);
+      get(url, results);
+    }
+
+    function results(data){
+      var movieApi = JSON.parse(data);
+      ul.textContent="";
+      movieApi.Search.forEach(function(movie){
+        var Limovies = document.createElement("li");
+        var movieTitle = document.createElement("a");
+        movieTitle.setAttribute("href","http://omdbapi.com/?s=" + movie.Title);
+        movieTitle.classList.add("movie-title");
+        movieTitle.textContent = movie.Title;
+        var movieYear = document.createElement("li");
+        movieYear.textContent = movie.Year;
+        ul.appendChild(Limovies);
+        Limovies.appendChild(movieTitle);
+        Limovies.appendChild(movieYear);
+
+      })
+    }
+
+    function get(url, callback){
+      var request = new XMLHttpRequest();
+      request.open("GET", url, true);
+      request.addEventListener("readystatechange", handleReadyStateChange)
+
+
+
+      function handleReadyStateChange() {
+        if (request.readyState == 4 && request.status == 200) {
+          callback(request.responseText);
+        }
+      };
+
+      request.send();
+    }
+
+
+    </script>
+  </body>
+</html>

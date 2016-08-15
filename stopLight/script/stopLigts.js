@@ -18,29 +18,31 @@ function redLight(){
 red.classList.toggle("redLightup");
 yellow.classList.remove("yellowLightup");
 green.classList.remove("greenLightup");
-claerInterval(alertFlash);
+clearInterval(alertFlash);
+
 }
 function yellowLight(){
 yellow.classList.toggle("yellowLightup");
 red.classList.remove("redLightup");
 green.classList.remove("greenLightup");
-claerInterval(alertFlash);
+clearInterval(alertFlash);
 
 }
 function greenLight(){
 green.classList.toggle("greenLightup");
 yellow.classList.remove("yellowLightup");
 red.classList.remove("redLightup");
-claerInterval(alertFlash);
+clearInterval(alertFlash);
 
 }
 function alertTick(){
 yellow.classList.toggle("yellowLightup");
 red.classList.remove("redLightup");
 green.classList.remove("greenLightup");
+
 }
 
 function alertLight(){
-alertFlash = setInterval(alertTick,1000);
+alertFlash = setInterval(alertTick,800);
 
 }

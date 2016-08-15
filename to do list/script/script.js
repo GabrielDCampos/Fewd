@@ -29,6 +29,27 @@ function addlistItem(item){
   span.textContent = item.trim(item);
   input.setAttribute("type", "checkbox")
 
+  saveStorage()
 }
 
 form.addEventListener("submit", formSubmitted);
+
+ function readStorage(){
+   ul.innerHTML = localStorage.getItem("listHTML")
+ }
+
+ function saveStorage(){
+   localStorage.setItem("listHTML",ul.innerHTML)
+ }
+
+ readStorage()
+
+//WHEN the page loades
+//  -look for localStorge to see if the HTML for the list is there
+//  -IF html is there
+//    -set the HTML of the list to html in localSotorage
+//     el.innerHTML= lacalStorage.getItem("listHTML")
+//WHEN the user adds an items
+// -do all the normal stuff
+// -save the HTML of the list to localSotorage
+//  localSotorage.setItem("...",el.innerHTML)

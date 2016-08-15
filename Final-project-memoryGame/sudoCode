@@ -1,0 +1,8 @@
+crating a memory game steps
+
+//html for the markup//
+//css the diferent styles for each of the divs//
+//when the page lodes: randomise the clases on tne dives taht contains the animals//
+  // i still dont know how im going to do that//
+//creat a set of bottons to toggle the theme of the game//
+//when click on the card  toggle betewn the classes the will contain the css tag//

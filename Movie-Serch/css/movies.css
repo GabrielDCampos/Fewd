@@ -1,0 +1,55 @@
+* { box-sizing: border-box; }
+body{
+  margin: 0;
+  font-size: 18px;
+}
+
+main{
+  padding:2em;
+  background:rgb(249, 253, 255);
+  border:1px hidden rgb(97, 97, 97);
+  text-align:center;
+  margin: 50px 100px;
+  box-shadow: 0 0 1em rgb(157, 166, 157);
+}
+
+#movie-sherch{
+
+}
+
+#movies-text-box{
+ cursor: pointer;
+ width: 70%;
+ border: 1px solid rgb(166, 166, 166);
+ border-radius: 5px;
+ font-size: inherit;
+ padding: .5em 1em;
+ cursor: pointer;
+}
+
+.movieButton{
+  border: 1px solid rgb(9, 126, 80);
+  border-radius: 5px;
+  font-size: inherit;
+  padding: .5em 2em;
+  cursor: pointer;
+  background: rgb(12, 158, 101);
+  color: white;
+  margin-left: 5px;
+}
+
+#movie-list{
+
+}
+
+li{
+ font-size:20px;
+ list-style: none;
+ text-align:left;
+ color:rgb(172, 184, 190);
+}
+a{
+  color:rgb(12, 158, 101);
+  text-decoration:none;
+
+}

@@ -1,13 +1,17 @@
 header{
-  font-family: sans-serif serif  serif(red serif);
   background:rgb(0, 0, 0);
-  color:rgb(55, 212, 224);
-  top:0px;
-  right:0px;
+  top:0;
+  left:0;
+  right:0;
+  position:fixed;
+  border-bottom: 1px solid rgb(154,154,154);
+  overflow:auto;
+  padding:12px 24px;
 
 }
 body{
   font-family: sans-serif serif ;
+  background-image: url();
 
 
 }
