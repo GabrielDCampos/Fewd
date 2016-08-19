@@ -17,17 +17,25 @@ header{
 }
 
 .reset{
-
+  cursor: pointer;
 }
 
 .randomise{
-
+  cursor: pointer;
 }
 
 li,.themes{
   float: left;
   display: inline;
   margin-right:5px;
+}
+.Animals{
+  cursor: pointer;
+
+}
+.nationalFlags{
+  cursor: pointer;
+
 }
 
 
@@ -42,12 +50,7 @@ body{
   width:1000px;
   margin-right:  auto ;
   margin-left:  auto ;
-  margin-top: 150px
-}
-
-.card-faceDown{
-  background-color: rgb(240, 222, 197);
-
+  margin-top: 150px;
 }
 
 .card{
@@ -58,27 +61,11 @@ body{
   padding:45px ;
   border:1px hidden  rgb(97, 97, 97);
   border-radius:10px;
-
+  background-color: rgb(240, 222, 197);
+  cursor: pointer;
+  background-size: cover;
 }
 
-.brasil{
-
-  background-image: url(https://upload.wikimedia.org/wikipedia/en/thumb/0/05/Flag_of_Brazil.svg/1280px-Flag_of_Brazil.svg.png);
-  background-size: cover ;
-
-}
-
-.usa{
-
-  background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/US_flag_48_stars.svg/220px-US_flag_48_stars.svg.png);
-}
-
-.china{
-
-  background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Flag_of_the_People's_Republic_of_China.svg/2000px-Flag_of_the_People's_Republic_of_China.svg.png);
-}
-
-.germany{
-
-  background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Flag_of_Germany_(unoff).svg/2000px-Flag_of_Germany_(unoff).svg.png);
+.cardFaceDown{
+  background-image: none !important;
 }
