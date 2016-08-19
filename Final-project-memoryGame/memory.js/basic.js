@@ -44,9 +44,13 @@ function flipCard(){
 
     if (firstCard.css("background-image") === secondCard.css("background-image")) {
 
-
+      firstCard.addClass("correct")
+      secondCard.addClass("correct");
 
     }else{
+      firstCard = null;
+      secondCard = null;
+
       setTimeout(wrong,700);
 
 
@@ -59,8 +63,6 @@ function flipCard(){
 
 }
 function wrong(){
-  firstCard.addClass("cardFaceDown") && secondCard.addClass("cardFaceDown")
+ $(".card:not(.correct)").addClass("cardFaceDown")
   console.log("rong");
-  firstCard = null;
-  secondCard = null;
 }
